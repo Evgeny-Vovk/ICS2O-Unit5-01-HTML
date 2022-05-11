@@ -3,7 +3,7 @@
   "short_name": "Evgeny's App",
   "description": "Github Page for Evgeny's App",
   "scope": "/ICS2O-Unit6-01-HTML/",
-  "start_url": "/ICS2O-Unit6-01-HTML/",
+  "start_url": "/ICS2O-Unit5-01-HTML/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "display": "standalone", 
