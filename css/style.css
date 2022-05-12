@@ -7,7 +7,7 @@
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 200%;
   margin-left: 40px;
 }
 
@@ -17,5 +17,9 @@ h2 {
 }
 
 p {
+  font-size: 150%;
+}
+
+#slider-value {
   font-size: 150%;
 }

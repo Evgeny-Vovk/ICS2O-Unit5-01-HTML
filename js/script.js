@@ -8,17 +8,31 @@ if (navigator.serviceWorker) {
   })
 }
 
+const randomNumber = Math.floor(Math.random() * 6) + 1
+
 /**
- *This function calculates celsius out of fahrenheit.
+ * This function updates the slider value.
  */
-function calculate() {
-  // input
-  const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
+
+/**
+ * This function compares slider with random number.
+ */
+function guessClicked() {
+  const sliderValue = slider.value
 
   // process
-  const celsius = ((fahrenheit - 32) * 5) / 9
-
-  // output
-  document.getElementById("celsius").innerHTML =
-    "<p>Answer : " + celsius.toFixed(2) + " °C.</p> "
+  if (sliderValue == randomNumber) {
+    document.getElementById("guess-result").innerHTML =
+      "Answer is " + randomNumber + "!" + " Congratulations!"
+    // console.log("Congratulations!")
+  }
+  //  block of code to be executed if condition1 is true
+  if (sliderValue != randomNumber) {
+    document.getElementById("guess-result").innerHTML =
+      "Answer is " + randomNumber + "!" + " Try again!"
+    // console.log("Try again!")
+  }
 }
